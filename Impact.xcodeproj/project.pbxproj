@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		700DDFC6292C64CA00466116 /* ImpactApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFC5292C64CA00466116 /* ImpactApp.swift */; };
+		700DDFC8292C64CA00466116 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFC7292C64CA00466116 /* ContentView.swift */; };
+		700DDFCA292C64CC00466116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700DDFC9292C64CC00466116 /* Assets.xcassets */; };
+		700DDFCD292C64CC00466116 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700DDFCC292C64CC00466116 /* Preview Assets.xcassets */; };
+		700DDFD7292C64CC00466116 /* ImpactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFD6292C64CC00466116 /* ImpactTests.swift */; };
+		700DDFE1292C64CC00466116 /* ImpactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFE0292C64CC00466116 /* ImpactUITests.swift */; };
+		700DDFE3292C64CC00466116 /* ImpactUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFE2292C64CC00466116 /* ImpactUITestsLaunchTests.swift */; };
+		700DDFF0292C69FC00466116 /* HapticStrengthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFEF292C69FC00466116 /* HapticStrengthController.swift */; };
+		700DDFF22931902400466116 /* ButtonPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFF12931902400466116 /* ButtonPress.swift */; };
+		700DDFF42931B4D400466116 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFF32931B4D400466116 /* Shake.swift */; };
+		700DDFF62932C03B00466116 /* HapticFeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFF52932C03B00466116 /* HapticFeedbackService.swift */; };
+		700DDFF92932C8E100466116 /* SelectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFF82932C8E100466116 /* SelectionCard.swift */; };
+		700DDFFB29330C4900466116 /* InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFFA29330C4800466116 /* InfoCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		700DDFD3292C64CC00466116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 700DDFBA292C64CA00466116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 700DDFC1292C64CA00466116;
+			remoteInfo = Impact;
+		};
+		700DDFDD292C64CC00466116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 700DDFBA292C64CA00466116 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 700DDFC1292C64CA00466116;
+			remoteInfo = Impact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		700DDFC2292C64CA00466116 /* Impact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Impact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		700DDFC5292C64CA00466116 /* ImpactApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactApp.swift; sourceTree = "<group>"; };
+		700DDFC7292C64CA00466116 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		700DDFC9292C64CC00466116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		700DDFCC292C64CC00466116 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		700DDFD2292C64CC00466116 /* ImpactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImpactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		700DDFD6292C64CC00466116 /* ImpactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactTests.swift; sourceTree = "<group>"; };
+		700DDFDC292C64CC00466116 /* ImpactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImpactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		700DDFE0292C64CC00466116 /* ImpactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactUITests.swift; sourceTree = "<group>"; };
+		700DDFE2292C64CC00466116 /* ImpactUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		700DDFEF292C69FC00466116 /* HapticStrengthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticStrengthController.swift; sourceTree = "<group>"; };
+		700DDFF12931902400466116 /* ButtonPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPress.swift; sourceTree = "<group>"; };
+		700DDFF32931B4D400466116 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
+		700DDFF52932C03B00466116 /* HapticFeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackService.swift; sourceTree = "<group>"; };
+		700DDFF82932C8E100466116 /* SelectionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCard.swift; sourceTree = "<group>"; };
+		700DDFFA29330C4800466116 /* InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		700DDFBF292C64CA00466116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700DDFCF292C64CC00466116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700DDFD9292C64CC00466116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		700DDFB9292C64CA00466116 = {
+			isa = PBXGroup;
+			children = (
+				700DDFC4292C64CA00466116 /* Impact */,
+				700DDFD5292C64CC00466116 /* ImpactTests */,
+				700DDFDF292C64CC00466116 /* ImpactUITests */,
+				700DDFC3292C64CA00466116 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		700DDFC3292C64CA00466116 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				700DDFC2292C64CA00466116 /* Impact.app */,
+				700DDFD2292C64CC00466116 /* ImpactTests.xctest */,
+				700DDFDC292C64CC00466116 /* ImpactUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		700DDFC4292C64CA00466116 /* Impact */ = {
+			isa = PBXGroup;
+			children = (
+				700DDFF72932C54800466116 /* ViewModifers */,
+				700DDFFA29330C4800466116 /* InfoCard.swift */,
+				700DDFEF292C69FC00466116 /* HapticStrengthController.swift */,
+				700DDFF52932C03B00466116 /* HapticFeedbackService.swift */,
+				700DDFF82932C8E100466116 /* SelectionCard.swift */,
+				700DDFC5292C64CA00466116 /* ImpactApp.swift */,
+				700DDFC7292C64CA00466116 /* ContentView.swift */,
+				700DDFC9292C64CC00466116 /* Assets.xcassets */,
+				700DDFCB292C64CC00466116 /* Preview Content */,
+			);
+			path = Impact;
+			sourceTree = "<group>";
+		};
+		700DDFCB292C64CC00466116 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				700DDFCC292C64CC00466116 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		700DDFD5292C64CC00466116 /* ImpactTests */ = {
+			isa = PBXGroup;
+			children = (
+				700DDFD6292C64CC00466116 /* ImpactTests.swift */,
+			);
+			path = ImpactTests;
+			sourceTree = "<group>";
+		};
+		700DDFDF292C64CC00466116 /* ImpactUITests */ = {
+			isa = PBXGroup;
+			children = (
+				700DDFE0292C64CC00466116 /* ImpactUITests.swift */,
+				700DDFE2292C64CC00466116 /* ImpactUITestsLaunchTests.swift */,
+			);
+			path = ImpactUITests;
+			sourceTree = "<group>";
+		};
+		700DDFF72932C54800466116 /* ViewModifers */ = {
+			isa = PBXGroup;
+			children = (
+				700DDFF12931902400466116 /* ButtonPress.swift */,
+				700DDFF32931B4D400466116 /* Shake.swift */,
+			);
+			path = ViewModifers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		700DDFC1292C64CA00466116 /* Impact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700DDFE6292C64CC00466116 /* Build configuration list for PBXNativeTarget "Impact" */;
+			buildPhases = (
+				700DDFBE292C64CA00466116 /* Sources */,
+				700DDFBF292C64CA00466116 /* Frameworks */,
+				700DDFC0292C64CA00466116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Impact;
+			productName = Impact;
+			productReference = 700DDFC2292C64CA00466116 /* Impact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		700DDFD1292C64CC00466116 /* ImpactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700DDFE9292C64CC00466116 /* Build configuration list for PBXNativeTarget "ImpactTests" */;
+			buildPhases = (
+				700DDFCE292C64CC00466116 /* Sources */,
+				700DDFCF292C64CC00466116 /* Frameworks */,
+				700DDFD0292C64CC00466116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				700DDFD4292C64CC00466116 /* PBXTargetDependency */,
+			);
+			name = ImpactTests;
+			productName = ImpactTests;
+			productReference = 700DDFD2292C64CC00466116 /* ImpactTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		700DDFDB292C64CC00466116 /* ImpactUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700DDFEC292C64CC00466116 /* Build configuration list for PBXNativeTarget "ImpactUITests" */;
+			buildPhases = (
+				700DDFD8292C64CC00466116 /* Sources */,
+				700DDFD9292C64CC00466116 /* Frameworks */,
+				700DDFDA292C64CC00466116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				700DDFDE292C64CC00466116 /* PBXTargetDependency */,
+			);
+			name = ImpactUITests;
+			productName = ImpactUITests;
+			productReference = 700DDFDC292C64CC00466116 /* ImpactUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		700DDFBA292C64CA00466116 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					700DDFC1292C64CA00466116 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					700DDFD1292C64CC00466116 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 700DDFC1292C64CA00466116;
+					};
+					700DDFDB292C64CC00466116 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 700DDFC1292C64CA00466116;
+					};
+				};
+			};
+			buildConfigurationList = 700DDFBD292C64CA00466116 /* Build configuration list for PBXProject "Impact" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 700DDFB9292C64CA00466116;
+			productRefGroup = 700DDFC3292C64CA00466116 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				700DDFC1292C64CA00466116 /* Impact */,
+				700DDFD1292C64CC00466116 /* ImpactTests */,
+				700DDFDB292C64CC00466116 /* ImpactUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		700DDFC0292C64CA00466116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700DDFCD292C64CC00466116 /* Preview Assets.xcassets in Resources */,
+				700DDFCA292C64CC00466116 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700DDFD0292C64CC00466116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700DDFDA292C64CC00466116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		700DDFBE292C64CA00466116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700DDFC8292C64CA00466116 /* ContentView.swift in Sources */,
+				700DDFF92932C8E100466116 /* SelectionCard.swift in Sources */,
+				700DDFF42931B4D400466116 /* Shake.swift in Sources */,
+				700DDFF22931902400466116 /* ButtonPress.swift in Sources */,
+				700DDFF62932C03B00466116 /* HapticFeedbackService.swift in Sources */,
+				700DDFC6292C64CA00466116 /* ImpactApp.swift in Sources */,
+				700DDFF0292C69FC00466116 /* HapticStrengthController.swift in Sources */,
+				700DDFFB29330C4900466116 /* InfoCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700DDFCE292C64CC00466116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700DDFD7292C64CC00466116 /* ImpactTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		700DDFD8292C64CC00466116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700DDFE3292C64CC00466116 /* ImpactUITestsLaunchTests.swift in Sources */,
+				700DDFE1292C64CC00466116 /* ImpactUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		700DDFD4292C64CC00466116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 700DDFC1292C64CA00466116 /* Impact */;
+			targetProxy = 700DDFD3292C64CC00466116 /* PBXContainerItemProxy */;
+		};
+		700DDFDE292C64CC00466116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 700DDFC1292C64CA00466116 /* Impact */;
+			targetProxy = 700DDFDD292C64CC00466116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		700DDFE4292C64CC00466116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		700DDFE5292C64CC00466116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		700DDFE7292C64CC00466116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Impact/Preview Content\"";
+				DEVELOPMENT_TEAM = 9VRURLA883;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joemanto.Impact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		700DDFE8292C64CC00466116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Impact/Preview Content\"";
+				DEVELOPMENT_TEAM = 9VRURLA883;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joemanto.Impact;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		700DDFEA292C64CC00466116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VRURLA883;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joemanto.ImpactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Impact.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Impact";
+			};
+			name = Debug;
+		};
+		700DDFEB292C64CC00466116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VRURLA883;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joemanto.ImpactTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Impact.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Impact";
+			};
+			name = Release;
+		};
+		700DDFED292C64CC00466116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VRURLA883;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joemanto.ImpactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Impact;
+			};
+			name = Debug;
+		};
+		700DDFEE292C64CC00466116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VRURLA883;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joemanto.ImpactUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Impact;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		700DDFBD292C64CA00466116 /* Build configuration list for PBXProject "Impact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700DDFE4292C64CC00466116 /* Debug */,
+				700DDFE5292C64CC00466116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700DDFE6292C64CC00466116 /* Build configuration list for PBXNativeTarget "Impact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700DDFE7292C64CC00466116 /* Debug */,
+				700DDFE8292C64CC00466116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700DDFE9292C64CC00466116 /* Build configuration list for PBXNativeTarget "ImpactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700DDFEA292C64CC00466116 /* Debug */,
+				700DDFEB292C64CC00466116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		700DDFEC292C64CC00466116 /* Build configuration list for PBXNativeTarget "ImpactUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700DDFED292C64CC00466116 /* Debug */,
+				700DDFEE292C64CC00466116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 700DDFBA292C64CA00466116 /* Project object */;
+}
