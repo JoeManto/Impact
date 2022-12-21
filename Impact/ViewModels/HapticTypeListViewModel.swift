@@ -12,7 +12,7 @@ class HapticTypeListViewModel: ObservableObject {
     private(set) var selectedIndex = 0
     
     private var intensity: CGFloat = 0.5
-   
+
     init(selections: [SelectionModel]) {
         // Todo init selected from user defaults
         self.selectedIndex = 0
@@ -20,6 +20,7 @@ class HapticTypeListViewModel: ObservableObject {
     }
     
     func updateIntensity(_ intensity: CGFloat) {
+        HapticFeedbackService.shared.execute(from: SelectionModel(type: .selection, level: .selection))
         for i in 0..<selections.count {
             self.selections[i].intensity = intensity
         }
