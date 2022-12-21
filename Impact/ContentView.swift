@@ -16,32 +16,30 @@ struct ContentView: View {
 struct HapticTableView: View {
     var body: some View {
         List {
-            Group {
-                HapticTypeList(vm: HapticTypeListViewModel(selections: [
-                    SelectionModel(type: .impact, level: .light),
-                    SelectionModel(type: .impact, level: .soft),
-                    SelectionModel(type: .impact, level: .medium),
-                    SelectionModel(type: .impact, level: .rigid),
-                    SelectionModel(type: .impact, level: .heavy)
-                ]))
-                .padding(.bottom, 100)
-            }
+            HapticTypeList(vm: HapticTypeListViewModel(selections: [
+                SelectionModel(type: .impact, level: .light),
+                SelectionModel(type: .impact, level: .soft),
+                SelectionModel(type: .impact, level: .medium),
+                SelectionModel(type: .impact, level: .rigid),
+                SelectionModel(type: .impact, level: .heavy)
+            ]))
+            .padding(.bottom, 100)
+        
 
-            Group {
-                HapticTypeList(vm: HapticTypeListViewModel(selections: [
-                    SelectionModel(type: .notif, level: .success),
-                    SelectionModel(type: .notif, level: .warning),
-                    SelectionModel(type: .notif, level: .error)
-                ]))
-                .padding(.bottom, 100)
-            }
+       
+            HapticTypeList(vm: HapticTypeListViewModel(selections: [
+                SelectionModel(type: .notif, level: .success),
+                SelectionModel(type: .notif, level: .warning),
+                SelectionModel(type: .notif, level: .error)
+            ]))
+            .padding(.bottom, 100)
+        
 
-            Group {
-                HapticTypeList(vm: HapticTypeListViewModel(selections: [
-                    SelectionModel(type: .selection, level: .selection)
-                ]))
-                .padding(.bottom, 100)
-            }
+        
+            HapticTypeList(vm: HapticTypeListViewModel(selections: [
+                SelectionModel(type: .selection, level: .selection)
+            ]))
+            .padding(.bottom, 100)
         }
     }
 }

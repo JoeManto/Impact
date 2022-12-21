@@ -15,6 +15,7 @@ class HapticTypeListViewModel: ObservableObject {
    
     init(selections: [SelectionModel]) {
         // Todo init selected from user defaults
+        self.selectedIndex = 0
         self.selections = selections
     }
     

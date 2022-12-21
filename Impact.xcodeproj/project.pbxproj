@@ -21,6 +21,7 @@
 		700DDFF92932C8E100466116 /* SelectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFF82932C8E100466116 /* SelectionCard.swift */; };
 		700DDFFB29330C4900466116 /* InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DDFFA29330C4800466116 /* InfoCard.swift */; };
 		706039402952A48D00D275B9 /* HapticTypeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060393F2952A48D00D275B9 /* HapticTypeListViewModel.swift */; };
+		706039432952A64B00D275B9 /* SelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706039422952A64B00D275B9 /* SelectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		700DDFF82932C8E100466116 /* SelectionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCard.swift; sourceTree = "<group>"; };
 		700DDFFA29330C4800466116 /* InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
 		7060393F2952A48D00D275B9 /* HapticTypeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTypeListViewModel.swift; sourceTree = "<group>"; };
+		706039422952A64B00D275B9 /* SelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +110,11 @@
 		700DDFC4292C64CA00466116 /* Impact */ = {
 			isa = PBXGroup;
 			children = (
+				706039442952A68A00D275B9 /* Services */,
+				706039412952A63700D275B9 /* Models */,
 				7060393E2952A44200D275B9 /* ViewModels */,
 				7060393D2952A43D00D275B9 /* Views */,
 				700DDFF72932C54800466116 /* ViewModifers */,
-				700DDFF52932C03B00466116 /* HapticFeedbackService.swift */,
-				700DDFF82932C8E100466116 /* SelectionCard.swift */,
 				700DDFC5292C64CA00466116 /* ImpactApp.swift */,
 				700DDFC7292C64CA00466116 /* ContentView.swift */,
 				700DDFC9292C64CC00466116 /* Assets.xcassets */,
@@ -158,6 +160,7 @@
 		7060393D2952A43D00D275B9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				700DDFF82932C8E100466116 /* SelectionCard.swift */,
 				700DDFEF292C69FC00466116 /* HapticTypeList.swift */,
 				700DDFFA29330C4800466116 /* InfoCard.swift */,
 			);
@@ -170,6 +173,22 @@
 				7060393F2952A48D00D275B9 /* HapticTypeListViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		706039412952A63700D275B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				706039422952A64B00D275B9 /* SelectionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		706039442952A68A00D275B9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				700DDFF52932C03B00466116 /* HapticFeedbackService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +327,7 @@
 				700DDFF22931902400466116 /* ButtonPress.swift in Sources */,
 				700DDFF62932C03B00466116 /* HapticFeedbackService.swift in Sources */,
 				700DDFC6292C64CA00466116 /* ImpactApp.swift in Sources */,
+				706039432952A64B00D275B9 /* SelectionModel.swift in Sources */,
 				700DDFF0292C69FC00466116 /* HapticTypeList.swift in Sources */,
 				706039402952A48D00D275B9 /* HapticTypeListViewModel.swift in Sources */,
 				700DDFFB29330C4900466116 /* InfoCard.swift in Sources */,
