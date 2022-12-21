@@ -8,19 +8,19 @@
 import Foundation
 import SwiftUI
 
-struct Shake: GeometryEffect {
-    enum Intensity: CGFloat {
-        case none = 0.0
-        case soft = 0.5
-        case normal = 1
-        case high = 1.5
-    }
-    
+enum ShakeIntensity: CGFloat {
+    case none = 0.0
+    case soft = 0.5
+    case normal = 1
+    case high = 1.5
+}
+
+private struct Shake: GeometryEffect {
     var distance: CGFloat = 8
     var numberOfShakes = 1
     var animatableData: CGFloat
     
-    init(intensity: Intensity = .normal) {
+    init(intensity: ShakeIntensity = .normal) {
         self.animatableData = intensity.rawValue
     }
 
@@ -31,7 +31,7 @@ struct Shake: GeometryEffect {
 }
 
 extension View {
-    func shake(intensity: Shake.Intensity) -> some View {
+    func shake(intensity: ShakeIntensity) -> some View {
         modifier(Shake(intensity: intensity))
     }
 }

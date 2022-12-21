@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //BasicView()
         HapticTableView()
     }
 }
@@ -18,7 +17,7 @@ struct HapticTableView: View {
     var body: some View {
         List {
             Group {
-                HapticTypeList(type: .impact, vm: HapticTypeListViewModel(selections: [
+                HapticTypeList(vm: HapticTypeListViewModel(selections: [
                     SelectionModel(type: .impact, level: .light),
                     SelectionModel(type: .impact, level: .soft),
                     SelectionModel(type: .impact, level: .medium),
@@ -29,23 +28,20 @@ struct HapticTableView: View {
             }
 
             Group {
-                HapticTypeList(type: .notif, vm: HapticTypeListViewModel(selections: [
+                HapticTypeList(vm: HapticTypeListViewModel(selections: [
                     SelectionModel(type: .notif, level: .success),
-                    SelectionModel(type: .impact, level: .warning),
-                    SelectionModel(type: .impact, level: .error)
+                    SelectionModel(type: .notif, level: .warning),
+                    SelectionModel(type: .notif, level: .error)
                 ]))
                 .padding(.bottom, 100)
             }
 
             Group {
-                HapticTypeList(type: .selection, vm: HapticTypeListViewModel(selections: [
+                HapticTypeList(vm: HapticTypeListViewModel(selections: [
                     SelectionModel(type: .selection, level: .selection)
                 ]))
                 .padding(.bottom, 100)
-
             }
-  
-            
         }
     }
 }

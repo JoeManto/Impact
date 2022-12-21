@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ButtonPress: ViewModifier {
+private struct ButtonPress: ViewModifier {
     var onTouchDown: () -> Void
     var onRelease: () -> Void
     @State private var isPressing: Bool = false
