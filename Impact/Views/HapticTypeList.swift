@@ -45,17 +45,19 @@ struct HapticTypeList: View {
                     }
                 }
                 
-                GeometryReader { geo in
-                    VStack {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(vm.getInfoBlocks(), id: \.id) { selection in
-                                    InfoCard(model: selection)
-                                        .frame(width: geo.size.width)
+                if vm.getSelected().type != .selection {
+                    GeometryReader { geo in
+                        VStack {
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack {
+                                    ForEach(vm.getInfoBlocks(), id: \.id) { selection in
+                                        InfoCard(model: selection)
+                                            .frame(width: geo.size.width)
+                                    }
                                 }
                             }
+                            .disabled(true)
                         }
-                        .disabled(true)
                     }
                 }
              }
